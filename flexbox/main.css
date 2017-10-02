@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  border: 10px solid black;
+  /*flex-direction: row;*/
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.box {
+  font-size: 80px;
+  color: white;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.box1 { background-color: #e51400; }
+.box2 { background-color: #fa6800; }
+.box3 { background-color: #f0a30a; }
+.box4 { background-color: #e3c800; }
+.box5 { background-color: #a4c400; }
+.box6 { background-color: #60a917; }
+.box7 { background-color: #00aba9; }
+.box8 { background-color: #1ba1e2; }
+.box9 { background-color: #aa00ff; }
