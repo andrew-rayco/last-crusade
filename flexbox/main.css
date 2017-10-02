@@ -1,11 +1,14 @@
 .container {
   display: flex;
   border: 10px solid black;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100vh;
 }
 
 .box {
   font-size: 100px;
+  width: 300px;
   color: white;
   padding: 10px;
   text-align: center;
