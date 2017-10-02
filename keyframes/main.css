@@ -1,11 +1,13 @@
 body {
   margin: 0 0 0 0;
   background-color: #171219;
-  animation-name: skychange;
+  /*animation-name: skychange;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
-  animation-timing-function: linear;
+  animation-timing-function: linear;*/
+  /* SHORTHAND FOR THE ABOVE */
+  animation: skychange 5s infinite linear forwards 2s;
 }
 
 .grass {
