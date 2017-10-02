@@ -1,0 +1,74 @@
+body {
+  margin: 0 0 0 0;
+  background-color: #171219;
+  /*animation-name: skychange;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;*/
+  /* SHORTHAND FOR THE ABOVE */
+  animation: skychange 5s infinite linear forwards 2s;
+}
+
+.grass {
+  background: #00D574;
+  height: 600px;
+  width: 100%;
+  position: absolute;
+}
+
+.sun {
+  background: #f1c40f;
+  width: 200px;
+  height: 200px;
+  margin: 100px;
+  margin-left: -100px;
+  border-radius: 50%;
+  animation-name: sunchange;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes skychange {
+  0% {
+    background-color: #171219;
+  }
+  10% {
+    background-color: #F0803C;
+  }
+  30% {
+    background-color: #027BCE;
+  }
+  70% {
+    background-color: #027BCE;
+  }
+  90% {
+    background-color: #984447;
+  }
+  110% {
+    background-color: #171219;
+  }
+}
+
+@keyframes sunchange {
+  0% {
+    transform: translate(0vw, 40vh);
+    background-color: orange;
+  }
+  25% {
+    transform: translate(20vw, 5vh);
+    background-color: yellow;
+  }
+  50% {
+    transform: translate(40vw, -10vh);
+  }
+  75% {
+    transform: translate(60vw, 5vh);
+    background-color: yellow;
+  }
+  100% {
+    transform: translate(80vw, 40vh);
+    background-color: orange;
+  }
+}
