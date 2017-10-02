@@ -1,6 +1,7 @@
 .container {
   display: flex;
   border: 10px solid black;
+  flex-direction: column;
 }
 
 .box {
