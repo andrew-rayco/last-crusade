@@ -1,10 +1,14 @@
 body {
   margin: 0 0 0 0;
-  background-color: #2c3e50;
+  background-color: #171219;
+  animation-name: skychange;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
 }
 
 .grass {
-  background: green;
+  background: #00D574;
   height: 600px;
   width: 100%;
   position: absolute;
@@ -14,5 +18,49 @@ body {
   background: #f1c40f;
   width: 200px;
   height: 200px;
+  margin: 100px;
   border-radius: 50%;
+  animation-name: sunchange;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes skychange {
+  0% {
+    background-color: #171219;
+  }
+  15% {
+    background-color: #F0803C;
+  }
+  25% {
+    background-color: #027BCE;
+  }
+  75% {
+    background-color: #027BCE;
+  }
+  85% {
+    background-color: #984447;
+  }
+  100% {
+    background-color: #171219;
+  }
+}
+
+@keyframes sunchange {
+  0% {
+    transform: translate(-10vw, 40vh);
+  }
+  25% {
+    transform: translate(15vw, 10vh)
+  }
+  50% {
+    transform: translate(40vw, -10vh)
+  }
+  75% {
+    transform: translate(65vw, 10vh)
+  }
+  100% {
+    transform: translate(80vw, 40vh);
+  }
 }
