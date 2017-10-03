@@ -3,7 +3,7 @@
 .container {
   display: flex;
   flex-wrap: nowrap;
-  flex-direction: row;
+  flex-direction: column;
 
   /*main axis*/
   /*justify-content: center;*/
@@ -29,13 +29,13 @@
   /*width: 200px;*/
   text-align: center;
   box-sizing: border-box;
-  flex-basis: 1000px;
+  /*flex-basis: 100px;*/
 }
 
 .box1 { background-color: #e51400; }
 .box2 { background-color: #fa6800; }
 .box3 { background-color: #f0a30a; }
-.box4 { background-color: #e3c800; }
+.box4 { background-color: #e3c800; flex-grow: 1; }
 .box5 { background-color: #a4c400; }
 .box6 { background-color: #60a917; }
 .box7 { background-color: #00aba9; }
