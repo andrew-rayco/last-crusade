@@ -1,6 +1,7 @@
 body {
   font-family: helvetica;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   background: #2c3e50;
   min-height: 100vh;
