@@ -1,11 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400');
+
 .container {
   display: flex;
-  border: 10px solid black;
-  /*flex-direction: row;*/
   flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column-reverse;
+
+  /*main axis*/
+  justify-content: flex-start;
+
+   /*cross axis*/
+  align-items: flex-end;
+
+  /*between rows*/
+  align-content: center;
+
+
   height: 80vh;
-  overflow: hidden;
+  border: 10px solid black;
+  /*overflow: hidden;*/
+  font-family: 'Lato';
+  font-weight: 300;
 }
 
 .box {
