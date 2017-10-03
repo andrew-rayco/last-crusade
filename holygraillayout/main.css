@@ -12,27 +12,31 @@ a {
   color: black;
 }
 
-header, footer, article, nav, aside {
+main > *, header, footer {
   padding: 15px;
   border-radius: 7px;
 }
 
-header, footer, main {
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1abc9c;
   margin-bottom: 10px;
   flex-basis: 100%;
 }
 
-header, footer {
-  background: #1abc9c;
-}
-
-header, main {
+main {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
+  flex-basis: 100%;
 }
 
-header {
-  align-items: center;
+footer {
+  background: #1abc9c;
+  margin-bottom: 10px;
+  flex-basis: 100%;
 }
 
 article {
