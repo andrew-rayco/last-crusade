@@ -9,7 +9,7 @@
   /*justify-content: center;*/
 
    /*cross axis*/
-  align-items: center;
+  /*align-items: center;*/
 
   /*between rows*/
   /*align-content: space-around;*/
@@ -23,12 +23,13 @@
 }
 
 .box {
-  font-size: 80px;
+  font-size: 50px;
   color: white;
   padding: 10px;
-  width: 200px;
+  /*width: 200px;*/
   text-align: center;
   box-sizing: border-box;
+  flex-basis: 1000px;
 }
 
 .box1 { background-color: #e51400; }
@@ -39,4 +40,4 @@
 .box6 { background-color: #60a917; }
 .box7 { background-color: #00aba9; }
 .box8 { background-color: #1ba1e2; }
-.box9 { background-color: #aa00ff; order: -1; }
+.box9 { background-color: #aa00ff; }
