@@ -20,7 +20,7 @@ a {
 	border-bottom: 1px solid #52c9aa;
 	text-decoration: none;
 	padding: 0;
-	transition: color ease-in .1s;
+	transition: color ease-out .3s;
 }
 
 a:hover {
@@ -36,6 +36,7 @@ i {
 		flex-direction: column;
 		align-items: center;
 		background: #34495e;
+		font-size: 25px;
 	}
 
 	a {
@@ -43,8 +44,10 @@ i {
 	}
 }
 
-@media screen and (min-width: 600px) and (max-width: 800px) {
+@media screen and (min-width: 600px) and (max-width: 1000px) {
 	nav {
 		justify-content: space-around;
+		font-size: 25px;
 	}
+
 }
