@@ -1,5 +1,3 @@
-
-
 function countDown(seconds) {
   var intervalId = setInterval(function() {
     seconds--
