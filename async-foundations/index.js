@@ -1,9 +1,13 @@
-function greet (name, formatter) {
-  return 'hello, ' + formatter(name)
-}
 
-function formatUpperCase(name) {
-  return name.toUpperCase()
-}
 
-greet('Tim', formatUpperCase)
+function countDown(seconds) {
+  var intervalId = setInterval(function() {
+    seconds--
+    if (seconds > 0) {
+      console.log('Timer:', seconds)
+    } else {
+      console.log('Ring Ring Ring!')
+      clearInterval(intervalId)
+    }
+  }, 1000)
+}
