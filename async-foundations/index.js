@@ -1,23 +1,23 @@
-var newPromise = new Promise((resolve, reject) => {
-  resolve(5)
-})
+var counter = 0
+function incCounter() {
+  counter++
+  console.log("Counter:", counter)
+}
 
-newPromise.then((data) => {
-  var p = new Promise((resolve, reject) => {
+function runLater(callback, timeInMs) {
+  var p = new Promise(function(resolve, reject) {
     setTimeout(() => {
-      console.log('first promise:', data)
-      resolve(data * 2)
-    }, 3000)
-  })
-  return p
-}).then((data2) => {
-  var p = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log('data2', data2)
-      resolve(data2 + 20)
-    }, 3000)
+      console.log(timeInMs)
+      resolve(callback())
+    }, timeInMs)
   });
   return p
-}).then((data3) => {
-  console.log(data3)
+}
+
+runLater(incCounter, 1000).then(() => {
+  return runLater(incCounter, 2000)
+}).then(() => {
+  return runLater(incCounter, 3000)
+}).then(() => {
+  console.log('Finito!')
 })
